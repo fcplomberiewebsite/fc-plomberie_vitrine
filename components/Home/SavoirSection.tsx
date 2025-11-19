@@ -76,7 +76,7 @@ export default function SavoirSection() {
       </div>
 
       {/* Bottom gradient effect */}
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white/5 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-linear-to-t from-white/5 to-transparent"></div>
     </section>
   );
 }

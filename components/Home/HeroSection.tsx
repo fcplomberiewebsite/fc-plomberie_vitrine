@@ -1,14 +1,25 @@
+import Image from "next/image";
 import Btn from "../Shared/Btn";
 
 export default function HeroSection() {
   return (
-    <div className="pt-18 h-[70vh] relative overflow-hidden">
+    <div className="pt-18 h-[80vh] relative overflow-hidden">
       {/* Background avec gradient moderne */}
       <section className="w-full h-full flex flex-col items-center justify-center px-6 bg-linear-to-br from-second-500 via-primary-500 to-primary-600 relative">
         {/* Effet de particules/texture */}
 
         {/* Contenu principal */}
         <div className="relative z-10 max-w-4xl text-center">
+          <div className="mb-6">
+            <Image
+              src="/logo/logo.png"
+              alt="FC Plomberie - Chauffage - Sanitaire"
+              width={100}
+              height={120}
+              className="mx-auto drop-shadow-2xl"
+              priority
+            />
+          </div>
           <h1 className="font-one text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-2 tracking-wide drop-shadow-lg">
             FC PLOMBERIE - CHAUFFAGE - SANITAIRE
           </h1>

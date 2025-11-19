@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Image from "next/image";
 import Link from "next/link";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
@@ -15,15 +16,23 @@ export default function Footer() {
         {/* Main content */}
         <div className="max-w-7xl mx-auto">
           {/* Company info header */}
-          <div className="text-center mb-16">
-            <h2 className="font-one text-2xl md:text-3xl font-bold text-white mb-4 tracking-wide">
+          <div className="text-center -mt-10 mb-16">
+            <Image
+              src="/logo/logo_white_inline.png"
+              alt="FC Plomberie - Chauffage - Sanitaire"
+              width={500}
+              height={120}
+              className="mx-auto drop-shadow-2xl mb-2"
+              priority
+            />
+            {/* <h2 className="font-one text-2xl md:text-3xl font-bold text-white mb-4 tracking-wide">
               FC PLOMBERIE - CHAUFFAGE - SANITAIRE
-            </h2>
-            <div className="w-32 h-1 bg-linear-to-r from-primary-500 to-second-500 mx-auto rounded-full mb-4"></div>
-            <p className="font-two text-white/80 max-w-2xl mx-auto">
+            </h2> */}
+            {/* <div className="w-32 h-1 bg-linear-to-r from-primary-500 to-second-500 mx-auto rounded-full mb-4"></div> */}
+            {/* <p className="font-two text-white/80 max-w-2xl mx-auto">
               Votre artisan plombier-chauffagiste de confiance en région Centre
               et parisienne
-            </p>
+            </p> */}
           </div>
 
           {/* Grid sections */}

@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
@@ -11,11 +12,11 @@ export default function NavbarDesktop() {
 
   const navRef = useRef<HTMLUListElement>(null);
 
-  const links = [
-    { href: "/", label: "Accueil" },
-    { href: "/a-propos", label: "À Propos" },
-    { href: "/contactez-nous", label: "Contactez-nous" },
-  ];
+  // const links = [
+  //   { href: "/", label: "Accueil" },
+  //   { href: "/a-propos", label: "À Propos" },
+  //   { href: "/contactez-nous", label: "Contactez-nous" },
+  // ];
 
   const serviceLinks = [
     { href: "/nos-services/plomberie", label: "Plomberie" },
@@ -30,10 +31,18 @@ export default function NavbarDesktop() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-200/20 shadow-sm">
       <div className="flex justify-between items-center py-4 mx-6 lg:mx-20">
-        <Link href="/" className="group">
-          <h1 className="font-one font-bold text-lg lg:text-xl text-noir-500 group-hover:text-primary-500 transition-colors duration-300">
+        <Link href="/" className="group flex items-center gap-3">
+          <Image
+            src="/logo/Logo_noir_inline.png"
+            alt="FC Plomberie - Chauffage - Sanitaire"
+            width={250}
+            height={120}
+            className="mx-auto drop-shadow-2xl"
+            priority
+          />
+          {/* <h1 className="font-one font-bold text-lg lg:text-xl text-noir-500 group-hover:text-primary-500 transition-colors duration-300">
             FC PLOMBERIE - CHAUFFAGE - SANITAIRE
-          </h1>
+          </h1> */}
         </Link>
 
         <div className="flex items-center gap-8">

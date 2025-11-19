@@ -20,11 +20,11 @@ export default function NavbarMobile() {
     }
   };
 
-  const links = [
-    { href: "/", label: "Accueil" },
-    { href: "/a-propos", label: "À Propos" },
-    { href: "/contactez-nous", label: "Contactez-nous" },
-  ];
+  // const links = [
+  //   { href: "/", label: "Accueil" },
+  //   { href: "/a-propos", label: "À Propos" },
+  //   { href: "/contactez-nous", label: "Contactez-nous" },
+  // ];
 
   const serviceLinks = [
     { href: "/nos-services/plomberie", label: "Plomberie" },

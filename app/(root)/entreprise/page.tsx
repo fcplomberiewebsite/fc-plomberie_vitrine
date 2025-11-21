@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import Btn from "@/components/Shared/Btn";
 import DevisSection from "@/components/Shared/DevisSection";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "L'entreprise | FC Plomberie - Chauffage - Sanitaire | Notre Histoire",
@@ -74,16 +75,32 @@ export default function AproposPage() {
     <div className="pt-20">
       {/* Hero Section */}
       <section className="relative h-[50vh] bg-linear-to-br from-primary-500 to-second-500 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-40"
+          style={{
+            backgroundImage: `url('/images/locaux.jpeg')`,
+          }}
+        />
         <div className="absolute inset-0 bg-linear-to-r from-black/20 via-black/10 to-black/20"></div>
-        <div className="relative z-10 h-full flex items-center justify-center px-6">
-          <div className="text-center text-white max-w-4xl">
+        <div className="relative z-10 h-full flex flex-col items-center justify-center px-6">
+          <div className="mb-6">
+            <Image
+              src="/logo/logo_white_inline.png"
+              alt="Logo - FC Plomberie - Chauffage - Sanitaire"
+              width={600}
+              height={120}
+              className="mx-auto drop-shadow-2xl"
+              priority
+            />
+          </div>
+          {/* <div className="text-center text-white max-w-4xl">
             <h1 className="font-one text-4xl md:text-5xl font-bold mb-6 tracking-wide drop-shadow-lg">
-              À Propos de FC Plomberie
+              À Propos
             </h1>
             <p className="font-two text-xl md:text-2xl opacity-90">
               Votre artisan de confiance
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -92,9 +109,9 @@ export default function AproposPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-one text-3xl md:text-4xl font-bold text-noir-700 mb-6">
-                Notre Histoire
-              </h2>
+              <h1 className="font-one text-3xl md:text-4xl font-bold text-noir-700 mb-6">
+                À Propos
+              </h1>
               <div className="w-24 h-1 bg-linear-to-r from-primary-500 to-second-500 rounded-full mb-8"></div>
 
               <div className="space-y-6 font-two text-noir-500 leading-relaxed">

@@ -190,7 +190,7 @@ export default function ServiceSanitairePage() {
               </h1>
               <p className="font-two text-xl md:text-2xl mb-8 drop-shadow-lg text-shadow font-medium">
                 Installation WC, douche, baignoire et rénovation salle de bains
-                à Orléans, Tours, Blois, Paris
+                à Orléans, Blois, Paris...
               </p>
               <Btn href="/contactez-nous">DEMANDEZ VOTRE DEVIS</Btn>
             </div>

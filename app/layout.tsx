@@ -1,10 +1,24 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Livvic, Jost } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Shared/Header";
 import Footer from "@/components/Shared/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const livvic = Livvic({
+  weight: ["400", "500", "600", "700", "900"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-livvic",
+});
+
+const jost = Jost({
+  weight: ["200", "400", "500", "600", "700", "900"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jost",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -48,7 +62,7 @@ export default function RootLayout({
           content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
       </head>
-      <body className={inter.className}>
+      <body className={`${livvic.variable} ${jost.variable} font-two`}>
         <div className="fixed top-0 left-0 w-full z-30">
           <Header />
         </div>

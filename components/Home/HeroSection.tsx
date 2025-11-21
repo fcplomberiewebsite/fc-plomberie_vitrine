@@ -13,7 +13,7 @@ export default function HeroSection() {
           <div className="mb-6">
             <Image
               src="/logo/logo.png"
-              alt="FC Plomberie - Chauffage - Sanitaire"
+              alt="Logo - FC Plomberie - Chauffage - Sanitaire"
               width={100}
               height={120}
               className="mx-auto drop-shadow-2xl"
@@ -24,7 +24,7 @@ export default function HeroSection() {
             FC PLOMBERIE - CHAUFFAGE - SANITAIRE
           </h1>
           <div className="h-px w-1/3 bg-white/80 mx-auto my-6"></div>
-          <h2 className="font-two font-light text-xl md:text-2xl lg:text-3xl text-white/95 mb-8 tracking-wider">
+          <h2 className="font-two font-extralight text-xl md:text-2xl lg:text-3xl text-white/95 mb-8 tracking-wider">
             Votre artisan plombier-chauffagiste
           </h2>
 
